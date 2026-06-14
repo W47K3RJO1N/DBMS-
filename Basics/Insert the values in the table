@@ -1,0 +1,5 @@
+INSERT INTO Student
+VALUES (1, 'Rahul', 20);
+
+INSERT INTO Student
+VALUES (2, 'Priya', 21);
