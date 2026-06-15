@@ -1,2 +1,2 @@
 SELECT * FROM Student
-WHERE Age > 20;
+WHERE Age > 30;
