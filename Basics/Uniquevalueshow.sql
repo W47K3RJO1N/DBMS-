@@ -1,0 +1,2 @@
+SELECT DISTINCT Age
+FROM Student;
