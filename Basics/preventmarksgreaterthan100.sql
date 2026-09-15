@@ -1,0 +1,13 @@
+DELIMITER //
+
+CREATE TRIGGER CheckMarks
+BEFORE INSERT ON ENROLLMENT
+FOR EACH ROW
+BEGIN
+    IF NEW.marks > 100 OR NEW.marks < 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Marks must be between 0 and 100';
+    END IF;
+END //
+
+DELIMITER ;
